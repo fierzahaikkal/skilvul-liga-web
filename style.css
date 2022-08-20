@@ -151,9 +151,9 @@ section.informasi .header-text h1{
   display: flex;
   padding: 1em 0;
   flex-direction: column;
-  border-radius: 20px;
+  border-radius: 10px;
   background: #DA767E;
-  border-bottom: 20px solid #F1FAEE;
+  border-bottom: 10px solid #F1FAEE;
 }
 
 span.num{
@@ -180,7 +180,7 @@ span.text{
   line-height: 0;
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 1024px){
   header{
     padding: 40px;
   }
@@ -240,12 +240,34 @@ span.text{
   }
   .box-wrap{
     width: 85vw;
+  }
+  .box-content{
+    height: 26vmin;
+    width: 26vmin;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .box-wrap{
+    width: 90vw;
     flex-wrap: wrap;
     gap: 30px;
   }
   .box-content{
-    height: 26vmin;
+    height: 30vmin;
     width: calc(50%-40px);
-    font-size: 12px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .box-wrap{
+    gap: 15px;
+  }
+  .box-content{
+    height: 25vmin;
+    width: 100%;
+    font-size: 8px;
   }
 }
