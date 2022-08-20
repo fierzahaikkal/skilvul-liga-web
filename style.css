@@ -114,7 +114,7 @@ section.informasi{
   align-items: center;
 }
 
-section.informasi .header-text{
+.header-text{
   top: 0;
   left: 0;
   width: 100%;
@@ -124,7 +124,7 @@ section.informasi .header-text{
   align-items: center;
   position: absolute;
 }
-section.informasi .header-text h1{
+.header-text h1{
   font-size: 2.4rem;
   font-weight: 700;
   color: #1D3557;
@@ -189,6 +189,43 @@ span.text{
   background: url(./img/home1.png);
   background-repeat: no-repeat;
   background-size: 60px;
+}
+
+section.sejarah{
+  display: flex;
+  justify-items: center;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  background: #F1FAEE;
+}
+
+.menu-sejarah{
+  margin: 10px 0;
+}
+
+.sejarah h1{
+  padding: 40px 0;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1D3557;
+}
+
+.menu-sejarah a{
+  background: #DA767E;
+  padding: 8px 15px;
+  border-radius: 10px;
+  color: #333;
+  margin: 0 10px;
+  -webkit-box-shadow: 0px 5px 15px -2px rgba(0,0,0,0.43);
+  -moz-box-shadow: 0px 5px 15px -2px rgba(0,0,0,0.43);
+  box-shadow: 0px 5px 15px -2px rgba(0,0,0,0.43);
+}
+
+.content-sejarah{
+  display: grid;
 }
 
 @media screen and (max-width: 1024px){
