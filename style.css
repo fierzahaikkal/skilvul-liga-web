@@ -314,9 +314,20 @@ section.sejarah{
 
 /* Gallery CSS */
 .gallery{
-  margin: 100px 0;
+  padding: 30px 0 0;
   max-width: 100%;
+  background: #457B9D;
 }
+
+.gallery h1{
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1D3557;
+}
+
 
 .gallery nav{
   display: flex;
@@ -334,8 +345,8 @@ nav .items .item{
   padding: 7px 25px;
   font-size: 18px;
   font-weight: 500;
-  color: #457B9D;
-  border: 2px solid #457B9D;
+  color: #1D3557;
+  border: 2px solid #1D3557;
   margin: 0 10px;
   border-radius: 20px;
   cursor: pointer;
