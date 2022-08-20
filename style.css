@@ -11,15 +11,30 @@
   text-decoration: none;
 }
 
-header{
+section{
+  position: relative;
+  padding: 100px;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: space-between;
-  background-color: #F1FAEE;
   align-items: center;
-  padding: 20px 30px;
+  background: #F1FAEE;
 }
 
-.nav-content{
+header{
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+
+header .navbar{
+  position: relative;
   display: flex;
   border-radius: 20px;
   padding: 10px 20px;
@@ -27,27 +42,121 @@ header{
   -moz-box-shadow: 0px 9px 24px -11px rgba(0,0,0,0.42);
   box-shadow: 0px 9px 24px -11px rgba(0,0,0,0.42);
 }
-
-.nav-content a{
-  padding: 0 30px;
+.navbar a{
+  display: inline-block;
+  padding: 0 20px;
   font-size: 1.1rem;
-  color: #080808;
+  color: #333;
   font-weight: 400;
+  margin-left: 10px;
 }
 
 header h1{
+  position: relative;
   font-weight: bold;
   font-size: 1.6rem;
-  color: #080808;
+  color: #333;
 }
 
 .home{
-  background: #F1FAEE;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  position: relative;
 }
 
 .home .text-home{
-  
+  position: relative;
+  max-width: 600px;
+  margin-left: 20px;
 }
+
+.text-home h3{
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.text-home h2{
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1em;
+  color: #333;
+}
+
+.text-home p{
+  color: #333;
+}
+
+.img-home{
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img-home img{
+  max-width: 900px;
+}
+
+@media(max-width: 991px){
+  header{
+    padding: 40px;
+  }
+  section{
+    padding: 150px 40px;
+  }
+  .home{
+    flex-direction: column;
+  }
+  .home .text-home, .home .img-home{
+    max-width: 100%;
+  }
+  header .navbar {
+    display: none;
+  }
+  header .navbar.active {
+    display: flex;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #A8DADC;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+    border-radius: 0;
+  }
+
+  header .navbar li a{
+    font-weight: 300;
+    margin-left: 0;
+    margin: 10px 0;
+    font-size: 1.5em;
+  }
+
+  header .toggle {
+    position: relative;
+    background: url(./img/bars-solid.svg);
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all .5s ease-in-out;
+  }
+  header .toggle.active{
+    position: fixed;
+    right: 40px;
+    background: url(./img/xmark-solid.svg);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
