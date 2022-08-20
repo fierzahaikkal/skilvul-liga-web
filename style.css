@@ -225,7 +225,7 @@ section.sejarah{
 }
 
 .content-sejarah{
-  display: grid;
+  display: gridl;
 }
 
 @media screen and (max-width: 1024px){
