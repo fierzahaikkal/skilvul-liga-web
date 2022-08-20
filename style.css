@@ -89,6 +89,10 @@ header .indonesia{
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 1em;
+  color: #DA767E;
+}
+
+.our {
   color: #333;
 }
 
@@ -565,7 +569,36 @@ nav .items .item:hover{
     padding: 7px 15px;
     margin: 5px;
   }
+  .container-sejarah {
+
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+  }
+
+  .container-persiapan {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+  }
+
+  .container-proklamasi {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .gallery-img {
+    display: grid;
+    justify-items: center;
+  }
 }
+
 
 @media screen and (max-width: 480px){
   .box-wrap{
