@@ -106,12 +106,12 @@ header .indonesia{
 
 section.informasi{
   position: relative;
-  padding: 100px;
   width: 100%;
   min-height: 100vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background: #457B9D;
+  align-items: center;
 }
 
 section.informasi .header-text{
@@ -154,6 +154,9 @@ section.informasi .header-text h1{
   border-radius: 10px;
   background: #DA767E;
   border-bottom: 10px solid #F1FAEE;
+  -webkit-box-shadow: 0px 5px 35px 1px rgba(0,0,0,0.56);
+  -moz-box-shadow: 0px 5px 35px 1px rgba(0,0,0,0.56);
+  box-shadow: 0px 5px 35px 1px rgba(0,0,0,0.56);
 }
 
 span.num{
@@ -178,6 +181,14 @@ span.text{
   font-weight: 500;
   list-style-type: none;
   line-height: 0;
+}
+
+.map-info{
+  width: 600px;
+  height: 600px;
+  background: url(./img/home1.png);
+  background-repeat: no-repeat;
+  background-size: 60px;
 }
 
 @media screen and (max-width: 1024px){
